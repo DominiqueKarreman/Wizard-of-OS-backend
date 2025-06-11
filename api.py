@@ -10,6 +10,7 @@ from ollama import chat
 
 # Enable cors on the server
 CORS(app, resources={r"/*": {"origins": "*"}})
+
 app.config['JWT_SECRET_KEY'] = 'ikhouvankaasenikhouvanpsemo2025'
 
 @app.route('/')
