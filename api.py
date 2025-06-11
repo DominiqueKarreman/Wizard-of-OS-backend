@@ -11,6 +11,7 @@ from ollama import chat
 # Enable cors on the server
 CORS(app, resources={r"/*": {"origins": "*"}})
 app.config['JWT_SECRET_KEY'] = 'ikhouvankaasenikhouvanpsemo2025'
+
 @app.route('/')
 def home():
     return "Welcome to the Flask API!"
@@ -161,6 +162,6 @@ def ask_schedule_question():
 
 
 if __name__ == '__main__':
-    app.run(port=5002, debug=True)
+    app.run(host="0.0.0.0", port=5002, debug=True)
 
     # Python (Flask) - AI Planning Commentary Endpoint
