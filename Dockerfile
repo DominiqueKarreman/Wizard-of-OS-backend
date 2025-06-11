@@ -9,7 +9,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 WORKDIR /app
 
 # Copy project files into the container
-COPY . 
+COPY . .
 
 # Install Python dependencies
 RUN pip install --no-cache-dir --upgrade pip \
